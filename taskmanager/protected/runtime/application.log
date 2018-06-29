@@ -1,0 +1,540 @@
+2018/06/29 09:22:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'taskmanager'' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/default/index
+---
+2018/06/29 09:24:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/default/index
+---
+2018/06/29 09:24:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/default/index
+---
+2018/06/29 09:24:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/default/index
+---
+2018/06/29 09:27:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'taskmanager'' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/default/index
+---
+2018/06/29 09:56:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:09:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:10:04 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/crud/CrudCode.php(44): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): CrudCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/crud')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/crud
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:10:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:10:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:10:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:11:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii
+---
+2018/06/29 10:11:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: could not find driver' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/
+---
+2018/06/29 10:13:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [1049] Unknown database 'taskmanager'' in /var/www/html/projetos/yii/framework/db/CDbConnection.php:382
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/CDbConnection.php(331): CDbConnection->open()
+#1 /var/www/html/projetos/yii/framework/db/CDbConnection.php(309): CDbConnection->setActive(true)
+#2 /var/www/html/projetos/yii/framework/base/CModule.php(388): CDbConnection->init()
+#3 /var/www/html/projetos/yii/framework/base/CModule.php(104): CModule->getComponent('db')
+#4 /var/www/html/projetos/yii/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /var/www/html/projetos/yii/framework/web/CFormModel.php(40): ModelCode->init()
+#6 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(154): CFormModel->__construct()
+#7 /var/www/html/projetos/yii/framework/gii/CCodeGenerator.php(64): CCodeGenerator->prepare()
+#8 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('gii/model')
+#14 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=gii/model
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=gii/
+---
+2018/06/29 10:17:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taskmanager.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in /var/www/html/projetos/taskmanager/index.php (13)
+2018/06/29 10:17:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taskmanager.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in /var/www/html/projetos/taskmanager/index.php (13)
+2018/06/29 10:17:49 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taskmanager.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in /var/www/html/projetos/taskmanager/index.php (13)
+2018/06/29 10:24:12 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taskmanager.user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `user`.
+in /var/www/html/projetos/taskmanager/index.php (13)
+2018/06/29 10:28:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /var/www/html/projetos/yii/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user')
+#1 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user
+---
+2018/06/29 11:05:58 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "radio".' in /var/www/html/projetos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CComponent->__call('radio', Array)
+#1 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CActiveForm->radio(Object(User), 'gender', Array)
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#3 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#4 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#11 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#21 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#22 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 11:06:13 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "radio".' in /var/www/html/projetos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CComponent->__call('radio', Array)
+#1 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CActiveForm->radio(Object(User), 'gender', Array)
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#3 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#4 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#11 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#21 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#22 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 11:07:39 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "radiolist".' in /var/www/html/projetos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CComponent->__call('radiolist', Array)
+#1 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CActiveForm->radiolist(Object(User), 'gender', Array)
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#3 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#4 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#11 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#21 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#22 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 11:07:58 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "hidden".' in /var/www/html/projetos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CComponent->__call('hidden', Array)
+#1 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CActiveForm->hidden(Object(User), 'gender', Array)
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#3 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#4 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#11 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#21 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#22 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 11:22:00 [error] [exception.CException] exception 'CException' with message 'Alias "ext.yiicalendar.YiiCalendar" is invalid. Make sure it points to an existing PHP file and the file is readable.' in /var/www/html/projetos/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('ext.yiicalendar...', true)
+#1 /var/www/html/projetos/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(UserController), 'ext.yiicalendar...', Array)
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('ext.yiicalendar...', Array)
+#3 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(52): CBaseController->widget('ext.yiicalendar...')
+#4 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#5 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#6 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#7 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#8 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#9 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#10 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#11 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#13 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#14 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#17 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#21 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#23 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#24 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#25 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 12:41:15 [error] [exception.CException] exception 'CException' with message 'Property "User.senha" is not defined.' in /var/www/html/projetos/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/projetos/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('senha')
+#1 /var/www/html/projetos/yii/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('senha')
+#2 /var/www/html/projetos/yii/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(User), 'senha')
+#3 /var/www/html/projetos/yii/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'senha', Array)
+#4 /var/www/html/projetos/yii/framework/web/widgets/CActiveForm.php(658): CHtml::activeTextField(Object(User), 'senha', Array)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(74): CActiveForm->textField(Object(User), 'senha', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#10 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#11 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#12 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#13 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#14 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#15 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#16 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#23 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#25 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#26 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=site/login
+---
+2018/06/29 12:48:35 [error] [exception.CException] exception 'CException' with message 'CActiveForm and its behaviors do not have a method or closure named "datepicker".' in /var/www/html/projetos/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CComponent->__call('datepicker', Array)
+#1 /var/www/html/projetos/taskmanager/protected/views/user/_form.php(44): CActiveForm->datepicker(Object(User), 'birth_date')
+#2 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#3 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#4 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#5 /var/www/html/projetos/taskmanager/protected/views/user/create.php(18): CController->renderPartial('_form', Array)
+#6 /var/www/html/projetos/yii/framework/web/CBaseController.php(127): require('/var/www/html/p...')
+#7 /var/www/html/projetos/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/p...', Array, true)
+#8 /var/www/html/projetos/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/p...', Array, true)
+#9 /var/www/html/projetos/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/projetos/taskmanager/protected/controllers/UserController.php(79): CController->render('create', Array)
+#11 /var/www/html/projetos/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/projetos/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/projetos/yii/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#15 /var/www/html/projetos/yii/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 /var/www/html/projetos/yii/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 /var/www/html/projetos/yii/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 /var/www/html/projetos/yii/framework/web/CController.php(292): CFilterChain->run()
+#19 /var/www/html/projetos/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/projetos/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#21 /var/www/html/projetos/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#22 /var/www/html/projetos/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/projetos/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/projetos/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/projetos/taskmanager/index.php?r=user
+---
