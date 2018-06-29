@@ -32,3 +32,13 @@ $this->menu=array(
 	),
 )); ?>
 
+<h2><?php echo GxHtml::encode($model->getRelationLabel('tasks')); ?></h2>
+<?php
+	echo GxHtml::openTag('ul');
+	foreach($model->tasks as $relatedModel) {
+		echo GxHtml::openTag('li');
+		echo GxHtml::link(GxHtml::encode(GxHtml::valueEx($relatedModel)), array('task/view', 'id' => GxActiveRecord::extractPkValue($relatedModel, true)));
+		echo GxHtml::closeTag('li');
+	}
+	echo GxHtml::closeTag('ul');
+?>

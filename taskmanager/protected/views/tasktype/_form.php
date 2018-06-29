@@ -20,17 +20,17 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'create_date'); ?>
-		<?php echo $form->textField($model, 'create_date', array('maxlength' => 45)); ?>
+		<?php echo $form->textField($model, 'create_date'); ?>
 		<?php echo $form->error($model,'create_date'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'update_date'); ?>
-		<?php echo $form->textField($model, 'update_date', array('maxlength' => 45)); ?>
+		<?php echo $form->textField($model, 'update_date'); ?>
 		<?php echo $form->error($model,'update_date'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
-		<?php echo $form->textField($model, 'name', array('maxlength' => 45)); ?>
+		<?php echo $form->textField($model, 'name', array('maxlength' => 130)); ?>
 		<?php echo $form->error($model,'name'); ?>
 		</div><!-- row -->
 

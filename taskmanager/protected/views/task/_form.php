@@ -20,32 +20,12 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'create_date'); ?>
-		<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model' => $model,
-			'attribute' => 'create_date',
-			'value' => $model->create_date,
-			'options' => array(
-				'showButtonPanel' => true,
-				'changeYear' => true,
-				'dateFormat' => 'yy-mm-dd',
-				),
-			));
-; ?>
+		<?php echo $form->textField($model, 'create_date'); ?>
 		<?php echo $form->error($model,'create_date'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'update_date'); ?>
-		<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
-			'model' => $model,
-			'attribute' => 'update_date',
-			'value' => $model->update_date,
-			'options' => array(
-				'showButtonPanel' => true,
-				'changeYear' => true,
-				'dateFormat' => 'yy-mm-dd',
-				),
-			));
-; ?>
+		<?php echo $form->textField($model, 'update_date'); ?>
 		<?php echo $form->error($model,'update_date'); ?>
 		</div><!-- row -->
 		<div class="row">

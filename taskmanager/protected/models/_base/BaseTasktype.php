@@ -31,14 +31,16 @@ abstract class BaseTasktype extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'create_date';
+		return 'name';
 	}
 
 	public function rules() {
 		return array(
-			array('idtasktype, create_date, update_date, name', 'required'),
+			array('idtasktype, name', 'required'),
 			array('idtasktype', 'numerical', 'integerOnly'=>true),
-			array('create_date, update_date, name', 'length', 'max'=>45),
+			array('name', 'length', 'max'=>130),
+			array('create_date, update_date', 'safe'),
+			array('create_date, update_date', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('idtasktype, create_date, update_date, name', 'safe', 'on'=>'search'),
 		);
 	}

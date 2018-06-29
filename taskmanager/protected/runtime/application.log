@@ -567,3 +567,174 @@ Stack trace:
 REQUEST_URI=/taskmanager/index.php?r=task/create
 HTTP_REFERER=http://localhost/taskmanager/index.php?r=task
 ---
+2018/06/29 15:31:37 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 15:33:44 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:32:37 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:33:42 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:33:43 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:37:49 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:42:36 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:43:12 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:43:15 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:52:42 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 16:55:21 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 17:14:46 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/html/taskmanager/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/html/yii/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /var/www/html/yii/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/var/www/html/t...')
+#1 /var/www/html/yii/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /var/www/html/yii/framework/web/CClientScript.php(463): CAssetManager->publish('/var/www/html/y...')
+#3 /var/www/html/yii/framework/zii/widgets/jui/CJuiWidget.php(99): CClientScript->getCoreScriptUrl()
+#4 /var/www/html/yii/framework/zii/widgets/jui/CJuiWidget.php(82): CJuiWidget->resolvePackagePath()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CJuiWidget->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#7 /var/www/html/taskmanager/protected/views/user/_search.php(44): CBaseController->widget('zii.widgets.jui...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#11 /var/www/html/taskmanager/protected/views/user/admin.php(37): CController->renderPartial('_search', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /var/www/html/taskmanager/protected/controllers/UserController.php(73): CController->render('admin', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/admin')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/admin
+---
+2018/06/29 17:15:08 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "/var/www/html/taskmanager/assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in /var/www/html/yii/framework/web/CAssetManager.php:128
+Stack trace:
+#0 /var/www/html/yii/framework/web/CAssetManager.php(113): CAssetManager->setBasePath('/var/www/html/t...')
+#1 /var/www/html/yii/framework/web/CAssetManager.php(235): CAssetManager->getBasePath()
+#2 /var/www/html/yii/framework/web/CClientScript.php(463): CAssetManager->publish('/var/www/html/y...')
+#3 /var/www/html/yii/framework/zii/widgets/jui/CJuiWidget.php(99): CClientScript->getCoreScriptUrl()
+#4 /var/www/html/yii/framework/zii/widgets/jui/CJuiWidget.php(82): CJuiWidget->resolvePackagePath()
+#5 /var/www/html/yii/framework/web/CBaseController.php(148): CJuiWidget->init()
+#6 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#7 /var/www/html/taskmanager/protected/views/user/_search.php(44): CBaseController->widget('zii.widgets.jui...', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#11 /var/www/html/taskmanager/protected/views/user/admin.php(37): CController->renderPartial('_search', Array)
+#12 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#13 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#15 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#16 /var/www/html/taskmanager/protected/controllers/UserController.php(73): CController->render('admin', Array)
+#17 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#18 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#19 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#20 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#22 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/admin')
+#23 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#24 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/admin
+---
+2018/06/29 17:36:43 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/06/29 17:49:41 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "CMaskedTextField".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/user/_form.php(48): CComponent->__call('CMaskedTextFiel...', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(48): GxActiveForm->CMaskedTextField(Object(User), 'fone', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/06/29 17:50:02 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "CMaskedTextField".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/user/_form.php(48): CComponent->__call('CMaskedTextFiel...', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(48): GxActiveForm->CMaskedTextField(Object(User), 'fone', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/06/29 17:50:03 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "CMaskedTextField".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/user/_form.php(48): CComponent->__call('CMaskedTextFiel...', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(48): GxActiveForm->CMaskedTextField(Object(User), 'fone', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---

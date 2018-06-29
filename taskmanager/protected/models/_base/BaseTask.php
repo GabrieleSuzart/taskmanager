@@ -38,17 +38,17 @@ abstract class BaseTask extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'create_date';
+		return 'title';
 	}
 
 	public function rules() {
 		return array(
-			array('idtask, create_date, update_date, title, iduser_fk, privacy, description, idtasktype_fk, status', 'required'),
+			array('idtask, title, iduser_fk, privacy, description, idtasktype_fk, status', 'required'),
 			array('idtask, iduser_fk, idtasktype_fk', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>130),
 			array('privacy, status', 'length', 'max'=>1),
-			array('conclusion_date', 'safe'),
-			array('conclusion_date', 'default', 'setOnEmpty' => true, 'value' => null),
+			array('create_date, update_date, conclusion_date', 'safe'),
+			array('create_date, update_date, conclusion_date', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('idtask, create_date, update_date, title, iduser_fk, privacy, description, idtasktype_fk, status, conclusion_date', 'safe', 'on'=>'search'),
 		);
 	}

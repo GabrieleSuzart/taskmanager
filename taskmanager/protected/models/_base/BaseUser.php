@@ -7,7 +7,7 @@
  * property or method in class "User".
  *
  * Columns in table "user" available as properties of the model,
- * and there are no model relations.
+ * followed by relations of table "user" available as properties of the model.
  *
  * @property integer $iduser
  * @property string $create_date
@@ -20,6 +20,7 @@
  * @property string $login
  * @property string $password
  *
+ * @property Task[] $tasks
  */
 abstract class BaseUser extends GxActiveRecord {
 
@@ -36,22 +37,25 @@ abstract class BaseUser extends GxActiveRecord {
 	}
 
 	public static function representingColumn() {
-		return 'create_date';
+		return 'name';
 	}
 
 	public function rules() {
 		return array(
-			array('create_date, update_date, name, gender, birth_date, email, fone, login, password', 'required'),
+			array('name, gender, birth_date, email, fone, login, password', 'required'),
 			array('name, email', 'length', 'max'=>130),
 			array('gender', 'length', 'max'=>1),
 			array('fone', 'length', 'max'=>11),
 			array('login, password', 'length', 'max'=>45),
+			array('create_date, update_date', 'safe'),
+			array('create_date, update_date', 'default', 'setOnEmpty' => true, 'value' => null),
 			array('iduser, create_date, update_date, name, gender, birth_date, email, fone, login, password', 'safe', 'on'=>'search'),
 		);
 	}
 
 	public function relations() {
 		return array(
+			'tasks' => array(self::HAS_MANY, 'Task', 'iduser_fk'),
 		);
 	}
 
@@ -72,6 +76,7 @@ abstract class BaseUser extends GxActiveRecord {
 			'fone' => Yii::t('app', 'Fone'),
 			'login' => Yii::t('app', 'Login'),
 			'password' => Yii::t('app', 'Password'),
+			'tasks' => null,
 		);
 	}
 
