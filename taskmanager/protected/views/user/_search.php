@@ -56,8 +56,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'login'); ?>
-		<?php echo $form->textField($model, 'login', array('maxlength' => 45)); ?>
+		<?php echo $form->label($model, 'username'); ?>
+		<?php echo $form->textField($model, 'username', array('maxlength' => 45)); ?>
 	</div>
 
 	<div class="row buttons">

@@ -26,8 +26,8 @@
 	<?php echo GxHtml::encode($data->getAttributeLabel('fone')); ?>:
 	<?php echo GxHtml::encode($data->fone); ?>
 	<br />
-	<?php echo GxHtml::encode($data->getAttributeLabel('login')); ?>:
-	<?php echo GxHtml::encode($data->login); ?>
+	<?php echo GxHtml::encode($data->getAttributeLabel('username')); ?>:
+	<?php echo GxHtml::encode($data->username); ?>
 	<br />
 	<?php echo GxHtml::encode($data->getAttributeLabel('password')); ?>:
 	<?php echo GxHtml::encode($data->password); ?>

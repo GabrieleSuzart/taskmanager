@@ -14,54 +14,51 @@
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
-		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->labelEx($model,'nome'); ?>
 		<?php echo $form->textField($model, 'name', array('maxlength' => 130)); ?>
 		<?php echo $form->error($model,'name'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'gender'); ?>
-		<?php echo $form->dropdownlist($model, 'gender', array('M' => 'Masculino', 'F' => 'Feminino')); ?>
+		<?php echo $form->labelEx($model,'gênero'); ?>
+		<?php echo $form->textField($model, 'gender', array('maxlength' => 1)); ?>
 		<?php echo $form->error($model,'gender'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'birth_date'); ?>
+		<?php echo $form->labelEx($model,'data de nascimento'); ?>
 		<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model' => $model,
 			'attribute' => 'birth_date',
 			'value' => $model->birth_date,
 			'options' => array(
 				'showButtonPanel' => true,
+				'changeMonth' => true,
 				'changeYear' => true,
-				'dateFormat' => 'yy-mm-dd',
+				'dateFormat' => 'dd-mm-yy',
 				),
 			));
 ; ?>
 		<?php echo $form->error($model,'birth_date'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
+		<?php echo $form->labelEx($model,'email '); ?>
 		<?php echo $form->textField($model, 'email', array('maxlength' => 130)); ?>
 		<?php echo $form->error($model,'email'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'fone'); ?>
-		<?php echo $form->TextField($model, 'fone', array('maxlength' => 11));
-		?>
+		<?php echo $form->labelEx($model,'telefone'); ?>
+		<?php echo $form->textField($model, 'fone', array('maxlength' => 11)); ?>
 		<?php echo $form->error($model,'fone'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'login'); ?>
-		<?php echo $form->textField($model, 'login', array('maxlength' => 45)); ?>
-		<?php echo $form->error($model,'login'); ?>
+		<?php echo $form->textField($model, 'username', array('maxlength' => 45)); ?>
+		<?php echo $form->error($model,'username'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'password'); ?>
+		<?php echo $form->labelEx($model,'senha'); ?>
 		<?php echo $form->passwordField($model, 'password', array('maxlength' => 45)); ?>
 		<?php echo $form->error($model,'password'); ?>
 		</div><!-- row -->
-
-		<label><?php echo GxHtml::encode($model->getRelationLabel('tasks')); ?></label>
-		<?php echo $form->checkBoxList($model, 'tasks', GxHtml::encodeEx(GxHtml::listDataEx(Task::model()->findAllAttributes(null, true)), false, true)); ?>
 
 <?php
 echo GxHtml::submitButton(Yii::t('app', 'Save'));

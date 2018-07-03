@@ -36,8 +36,7 @@ abstract class BaseTasktype extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('idtasktype, name', 'required'),
-			array('idtasktype', 'numerical', 'integerOnly'=>true),
+			array('name', 'required'),
 			array('name', 'length', 'max'=>130),
 			array('create_date, update_date', 'safe'),
 			array('create_date, update_date', 'default', 'setOnEmpty' => true, 'value' => null),

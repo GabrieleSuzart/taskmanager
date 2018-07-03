@@ -17,7 +17,7 @@
  * @property string $birth_date
  * @property string $email
  * @property string $fone
- * @property string $login
+ * @property string $username
  * @property string $password
  *
  * @property Task[] $tasks
@@ -42,14 +42,14 @@ abstract class BaseUser extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('name, gender, birth_date, email, fone, login, password', 'required'),
+			array('name, gender, birth_date, email, fone, username, password', 'required'),
 			array('name, email', 'length', 'max'=>130),
 			array('gender', 'length', 'max'=>1),
 			array('fone', 'length', 'max'=>11),
-			array('login, password', 'length', 'max'=>45),
+			array('username, password', 'length', 'max'=>45),
 			array('create_date, update_date', 'safe'),
 			array('create_date, update_date', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('iduser, create_date, update_date, name, gender, birth_date, email, fone, login, password', 'safe', 'on'=>'search'),
+			array('iduser, create_date, update_date, name, gender, birth_date, email, fone, username, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -74,7 +74,7 @@ abstract class BaseUser extends GxActiveRecord {
 			'birth_date' => Yii::t('app', 'Birth Date'),
 			'email' => Yii::t('app', 'Email'),
 			'fone' => Yii::t('app', 'Fone'),
-			'login' => Yii::t('app', 'Login'),
+			'username' => Yii::t('app', 'Username'),
 			'password' => Yii::t('app', 'Password'),
 			'tasks' => null,
 		);
@@ -91,7 +91,7 @@ abstract class BaseUser extends GxActiveRecord {
 		$criteria->compare('birth_date', $this->birth_date, true);
 		$criteria->compare('email', $this->email, true);
 		$criteria->compare('fone', $this->fone, true);
-		$criteria->compare('login', $this->login, true);
+		$criteria->compare('username', $this->username, true);
 		$criteria->compare('password', $this->password, true);
 
 		return new CActiveDataProvider($this, array(

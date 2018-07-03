@@ -43,8 +43,8 @@ abstract class BaseTask extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('idtask, title, iduser_fk, privacy, description, idtasktype_fk, status', 'required'),
-			array('idtask, iduser_fk, idtasktype_fk', 'numerical', 'integerOnly'=>true),
+			array('title, iduser_fk, privacy, description, idtasktype_fk, status', 'required'),
+			array('iduser_fk, idtasktype_fk', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>130),
 			array('privacy, status', 'length', 'max'=>1),
 			array('create_date, update_date, conclusion_date', 'safe'),

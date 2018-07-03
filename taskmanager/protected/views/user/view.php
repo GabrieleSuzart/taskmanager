@@ -27,7 +27,7 @@ $this->menu=array(
 'birth_date',
 'email',
 'fone',
-'login',
+'username',
 'password',
 	),
 )); ?>
