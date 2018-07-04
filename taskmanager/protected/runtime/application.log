@@ -2243,3 +2243,1082 @@ Stack trace:
 REQUEST_URI=/taskmanager/index.php
 in /var/www/html/taskmanager/protected/controllers/SiteController.php (32)
 in /var/www/html/taskmanager/index.php (13)
+2018/07/04 08:16:11 [warning] [application] Failed to set unsafe attribute "tasks" of "Tasktype".
+in /var/www/html/taskmanager/protected/controllers/TasktypeController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 08:23:24 [error] [exception.CException] exception 'CException' with message 'SiteController não pôde encontrar a visualização "_search" solicitada.' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/site/index.php(15): CController->renderPartial('_search', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /var/www/html/taskmanager/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---
+2018/07/04 08:26:04 [error] [exception.CException] exception 'CException' with message 'SiteController não pôde encontrar a visualização "_search" solicitada.' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/site/index.php(15): CController->renderPartial('_search', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /var/www/html/taskmanager/protected/controllers/SiteController.php(39): CController->render('index', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---
+2018/07/04 08:27:33 [error] [exception.CException] exception 'CException' with message 'SiteController não pôde encontrar a visualização "_search" solicitada.' in /var/www/html/yii/framework/web/CController.php:879
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/site/index.php(29): CController->renderPartial('_search', Array)
+#1 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#2 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#3 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#5 /var/www/html/taskmanager/protected/controllers/SiteController.php(33): CController->render('index', Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---
+2018/07/04 08:32:52 [error] [php] Undefined variable: model (/var/www/html/taskmanager/protected/views/site/index.php:13)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#1 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#2 /var/www/html/taskmanager/protected/controllers/SiteController.php(33): SiteController->render()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#6 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#7 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/views/site/index.php (13)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (33)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 08:49:39 [error] [exception.CException] exception 'CException' with message 'A propriedade "CWebUser.iduser" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/web/auth/CWebUser.php(141): CComponent->__get('iduser')
+#1 /var/www/html/taskmanager/protected/views/site/index.php(32): CWebUser->__get('iduser')
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#6 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#7 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#8 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#9 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#10 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#12 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#13 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/04 09:52:57 [error] [php] Undefined variable: email (/var/www/html/taskmanager/protected/models/_base/BaseTask.php:89)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): SiteController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (89)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 09:53:08 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:Yii::app()->user->id.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:53:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:Yii::app()->user->id' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 09:54:21 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$id' at line 1. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:$id.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:54:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$id' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:$id' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 09:55:16 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $id=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:55:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $id=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 09:56:51 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/task/admin.php (70)
+in /var/www/html/taskmanager/protected/controllers/TaskController.php (73)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:56:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/task/admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/TaskController.php(73): CController->render('admin', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): TaskController->actionAdmin()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('task/admin')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php?r=task/admin
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/04 09:57:12 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=iduser_fk.
+in /var/www/html/taskmanager/protected/views/task/admin.php (70)
+in /var/www/html/taskmanager/protected/controllers/TaskController.php (73)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:57:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/task/admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/TaskController.php(73): CController->render('admin', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): TaskController->actionAdmin()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('task/admin')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php?r=task/admin
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/04 09:58:22 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=iduser_fk.
+in /var/www/html/taskmanager/protected/views/task/admin.php (70)
+in /var/www/html/taskmanager/protected/controllers/TaskController.php (73)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:58:22 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/task/admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/TaskController.php(73): CController->render('admin', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): TaskController->actionAdmin()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('task/admin')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php?r=task/admin
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/04 09:58:28 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/task/admin.php (70)
+in /var/www/html/taskmanager/protected/controllers/TaskController.php (73)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:58:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/task/admin.php(70): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/TaskController.php(73): CController->render('admin', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): TaskController->actionAdmin()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('task/admin')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php?r=task/admin
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/04 09:58:47 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:58:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 09:58:47 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:58:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: no parameters were bound. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 09:59:34 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 09:59:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE $here=:iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:04:41 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetch(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT 1 FROM `user` `t` WHERE $here=:iduser_fk LIMIT 1.
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (91)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:04:41 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT 1 FROM `user` `t` WHERE $here=:iduser_fk LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(91): CActiveRecord->exists(Object(CDbCriteria))
+#3 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:06:30 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetch(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. A declaração SQL executada foi: SELECT 1 FROM `user` `t` WHERE iduser_fk=:here LIMIT 1.
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (91)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:06:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT 1 FROM `user` `t` WHERE iduser_fk=:here LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(91): CActiveRecord->exists(Object(CDbCriteria))
+#3 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:09:18 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=$here.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 10:09:18 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=$here' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:11:25 [error] [php] Undefined variable: iduser_fk (/var/www/html/taskmanager/protected/models/_base/BaseTask.php:90)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): SiteController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (90)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:13:10 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetch(): SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. A declaração SQL executada foi: SELECT 1 FROM `user` `t` WHERE iduser_fk=:Yii::app()->user->id LIMIT 1.
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (90)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:13:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[HY093]: Invalid parameter number: parameter was not defined. The SQL statement executed was: SELECT 1 FROM `user` `t` WHERE iduser_fk=:Yii::app()->user->id LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(90): CActiveRecord->exists(Object(CDbCriteria))
+#3 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:13:29 [error] [php] Undefined variable: iduser_fk (/var/www/html/taskmanager/protected/models/_base/BaseTask.php:100)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): SiteController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (100)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:14:45 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetch(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here LIMIT 1' at line 1. A declaração SQL executada foi: SELECT 1 FROM `user` `t` WHERE iduser_fk=:$here LIMIT 1.
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (102)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:14:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here LIMIT 1' at line 1. The SQL statement executed was: SELECT 1 FROM `user` `t` WHERE iduser_fk=:$here LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(102): CActiveRecord->exists(Object(CDbCriteria))
+#3 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:17:50 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetch(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here LIMIT 1' at line 1. A declaração SQL executada foi: SELECT 1 FROM `user` `t` WHERE $iduser_fk=:$here LIMIT 1.
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (102)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:17:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here LIMIT 1' at line 1. The SQL statement executed was: SELECT 1 FROM `user` `t` WHERE $iduser_fk=:$here LIMIT 1' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(408): CDbCommand->queryInternal('fetch', Array, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1607): CDbCommand->queryRow()
+#2 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(102): CActiveRecord->exists(Object(CDbCriteria))
+#3 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:20:48 [error] [exception.CException] exception 'CException' with message 'A propriedade "CActiveDataProvider.0" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/web/CActiveDataProvider.php(84): CComponent->__set('0', NULL)
+#1 /var/www/html/taskmanager/protected/models/_base/BaseTask.php(104): CActiveDataProvider->__construct(Object(Task), Array)
+#2 /var/www/html/taskmanager/protected/views/site/index.php(38): BaseTask->search()
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#7 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#8 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#9 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#10 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#11 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#13 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#14 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#15 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:34:14 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::app()->user->id' at line 1. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=Yii::app()->user->id.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 10:34:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '::app()->user->id' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=Yii::app()->user->id' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:35:54 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=$here.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 10:35:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42S22]: Column not found: 1054 Unknown column '$here' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=$here' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:37:53 [error] [php] Undefined variable: iduser_fk (/var/www/html/taskmanager/protected/models/_base/BaseTask.php:105)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#3 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): SiteController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (105)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:39:14 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$iduser_fk' at line 1. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE here=:$iduser_fk.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 10:39:14 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$iduser_fk' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE here=:$iduser_fk' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 10:40:50 [error] [php] Invalid argument supplied for foreach() (/var/www/html/yii/framework/web/CActiveDataProvider.php:83)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(96): SiteController->renderInternal()
+#2 /var/www/html/yii/framework/web/CController.php(870): SiteController->renderFile()
+#3 /var/www/html/yii/framework/web/CController.php(783): SiteController->renderPartial()
+#4 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): SiteController->render()
+#5 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#6 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /var/www/html/yii/framework/web/CController.php(287): SiteController->runAction()
+#8 /var/www/html/yii/framework/web/CController.php(266): SiteController->runActionWithFilters()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(283): SiteController->run()
+#10 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#11 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php
+in /var/www/html/taskmanager/protected/models/_base/BaseTask.php (101)
+in /var/www/html/taskmanager/protected/views/site/index.php (38)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+2018/07/04 10:43:15 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchColumn(): SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here' at line 1. A declaração SQL executada foi: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:$here.
+in /var/www/html/taskmanager/protected/views/site/index.php (55)
+in /var/www/html/taskmanager/protected/controllers/SiteController.php (36)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 10:43:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':$here' at line 1. The SQL statement executed was: SELECT COUNT(*) FROM `task` `t` WHERE iduser_fk=:$here' in /var/www/html/yii/framework/db/CDbCommand.php:528
+Stack trace:
+#0 /var/www/html/yii/framework/db/CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1540): CDbCommand->queryScalar()
+#2 /var/www/html/yii/framework/web/CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 /var/www/html/yii/framework/web/CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 /var/www/html/yii/framework/web/CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 /var/www/html/yii/framework/web/CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(108): CDataProvider->getData()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(289): CBaseListView->init()
+#8 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#9 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 /var/www/html/taskmanager/protected/views/site/index.php(55): CBaseController->widget('zii.widgets.gri...', Array)
+#11 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#12 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#13 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#14 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#15 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#16 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#17 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#18 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#19 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#21 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#22 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#23 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/taskmanager/index.php
+---
+2018/07/04 11:00:28 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::fetchAll(): SQLSTATE[42S02]: Base table or view not found: 1146 Table 'taskmanager.Task' doesn't exist. A declaração SQL executada foi: SHOW COLUMNS FROM `Task`.
+in /var/www/html/taskmanager/index.php (13)
+2018/07/04 11:07:15 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getGenderOptions".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('getGenderOption...', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(26): CActiveRecord->__call('getGenderOption...', Array)
+#2 /var/www/html/taskmanager/protected/views/user/_form.php(26): User->getGenderOptions()
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#6 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#11 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#13 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#14 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#15 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:07:19 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "getGenderOptions".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(226): CComponent->__call('getGenderOption...', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(26): CActiveRecord->__call('getGenderOption...', Array)
+#2 /var/www/html/taskmanager/protected/views/user/_form.php(26): User->getGenderOptions()
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#6 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#11 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#13 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#14 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#15 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:43:04 [error] [exception.CException] exception 'CException' with message 'A propriedade "CJuiDatePicker.mask" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('mask', '99-99-9999')
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(GxActiveForm), 'zii.widgets.jui...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 /var/www/html/taskmanager/protected/views/user/_form.php(46): CBaseController->widget('zii.widgets.jui...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:44:14 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widgets.jui.CJuiDatePicker.CMaskedTextField" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widgets.jui...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(GxActiveForm), 'zii.widgets.jui...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 /var/www/html/taskmanager/protected/views/user/_form.php(46): CBaseController->widget('zii.widgets.jui...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:44:24 [error] [exception.CException] exception 'CException' with message 'A propriedade "CJuiDatePicker.mask" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(162): CComponent->__set('mask', '99-99-9999')
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(GxActiveForm), 'zii.widgets.jui...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.jui...', Array)
+#3 /var/www/html/taskmanager/protected/views/user/_form.php(46): CBaseController->widget('zii.widgets.jui...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#8 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#9 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#11 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#12 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#13 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#14 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#15 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#16 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#18 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#19 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:47:02 [error] [exception.CException] exception 'CException' with message 'CMaskedTextField deve especificar os valores das propriedades "model" e "attribute" ou "name".' in /var/www/html/yii/framework/web/widgets/CInputWidget.php:61
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CMaskedTextField.php(62): CInputWidget->resolveNameID()
+#1 /var/www/html/yii/framework/web/CBaseController.php(174): CMaskedTextField->run()
+#2 /var/www/html/taskmanager/protected/views/user/_form.php(48): CBaseController->widget('CMaskedTextFiel...', Array)
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#6 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#11 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#13 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#14 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#15 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 11:48:57 [error] [exception.CException] exception 'CException' with message 'CMaskedTextField deve especificar os valores das propriedades "model" e "attribute" ou "name".' in /var/www/html/yii/framework/web/widgets/CInputWidget.php:61
+Stack trace:
+#0 /var/www/html/yii/framework/web/widgets/CMaskedTextField.php(62): CInputWidget->resolveNameID()
+#1 /var/www/html/yii/framework/web/CBaseController.php(174): CMaskedTextField->run()
+#2 /var/www/html/taskmanager/protected/views/user/_form.php(39): CBaseController->widget('CMaskedTextFiel...', Array)
+#3 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#4 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#5 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#6 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#7 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#8 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#10 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#11 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#12 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#13 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#14 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#15 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#17 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#18 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#19 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/admin
+---
+2018/07/04 12:05:29 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "email".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/user/_form.php(51): CComponent->__call('email', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(51): GxActiveForm->email(Object(User), 'email', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/index
+---
+2018/07/04 12:13:41 [error] [exception.CException] exception 'CException' with message 'GxActiveForm and its behaviors do not have a method or closure named "CEmailValidator".' in /var/www/html/yii/framework/base/CComponent.php:266
+Stack trace:
+#0 /var/www/html/taskmanager/protected/views/user/_form.php(51): CComponent->__call('CEmailValidator', Array)
+#1 /var/www/html/taskmanager/protected/views/user/_form.php(51): GxActiveForm->CEmailValidator(Object(User), 'email', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#3 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#4 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#5 /var/www/html/taskmanager/protected/views/user/create.php(19): CController->renderPartial('_form', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('create', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/UserController.php(27): CController->render('create', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/index
+---

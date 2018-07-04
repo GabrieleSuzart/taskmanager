@@ -56,5 +56,14 @@
 
 </div><!-- page -->
 
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+<script>
+    $(document).ready(function () { 
+        var $date = $(".hasDatepicker");
+        $date.mask('00-00-0000', {reverse: true});
+		// var $user_fone = $("#User_fone");
+		// $user_fone.mask('(00)00000-0000', {reverse: true});
+    });
+</script>
 </body>
 </html>

@@ -20,11 +20,18 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'gênero'); ?>
-		<?php echo $form->textField($model, 'gender', array('maxlength' => 1)); ?>
+		<?php echo $form->dropdownlist($model, 'gender', 
+			array(
+				'prompt'=>'Selecione uma opção',
+				'F' => 'Feminino',
+				'M' => 'Masculino'
+			)
+		); 
+		?>
 		<?php echo $form->error($model,'gender'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'data de nascimento'); ?>
+		<?php echo $form->labelEx($model,'data de nascimento');?>
 		<?php $form->widget('zii.widgets.jui.CJuiDatePicker', array(
 			'model' => $model,
 			'attribute' => 'birth_date',
@@ -41,7 +48,7 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'email '); ?>
-		<?php echo $form->textField($model, 'email', array('maxlength' => 130)); ?>
+		<?php echo $form->emailField($model, 'email', array('maxlength' => 130)); ?>
 		<?php echo $form->error($model,'email'); ?>
 		</div><!-- row -->
 		<div class="row">
