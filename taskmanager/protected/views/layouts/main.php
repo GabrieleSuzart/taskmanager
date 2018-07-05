@@ -15,16 +15,19 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/style.css" />
-
+	<link rel="shortcut icon" href="images/favicon.ico">
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 
 <body>
+	<div class"teste">
+</div>
 
 <div class="container" id="page">
-
 	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		<a href="index.php">
+			<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
+		</a>
 	</div><!-- header -->
 
 	<div id="mainmenu">
