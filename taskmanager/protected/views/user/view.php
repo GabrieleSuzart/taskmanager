@@ -6,15 +6,15 @@ $this->breadcrumbs = array(
 );
 
 $this->menu=array(
-	array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
-	array('label'=>Yii::t('app', 'Update') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->iduser)),
-	array('label'=>Yii::t('app', 'Delete') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->iduser), 'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url'=>array('admin')),
+	array('label'=>Yii::t('app', 'Listar') . ' ' . '', 'url'=>array('index')),
+	array('label'=>Yii::t('app', 'Novo') . ' ' . '', 'url'=>array('create')),
+	array('label'=>Yii::t('app', 'Editar') . ' ' . GxHtml::valueEx($model), 'url'=>array('update', 'id' => $model->iduser)),
+	array('label'=>Yii::t('app', 'Excluir') . ' ' . GxHtml::valueEx($model), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->iduser), 'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('app', 'Gerenciar') . ' ' . '', 'url'=>array('admin')),
 );
 ?>
 
-<h1><?php echo Yii::t('app', 'View') . ' ' . GxHtml::encode($model->label()) . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
+<h1><?php echo Yii::t('app', 'Visualizando cadastro de') . ' ' . '' . ' ' . GxHtml::encode(GxHtml::valueEx($model)); ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data' => $model,
@@ -26,6 +26,7 @@ $this->menu=array(
 'gender',
 'birth_date',
 'email',
+'ddd',
 'fone',
 'username',
 'password',

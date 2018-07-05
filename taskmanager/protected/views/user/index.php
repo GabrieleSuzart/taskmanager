@@ -1,17 +1,18 @@
+
 <?php
 
 $this->breadcrumbs = array(
-	User::label(2),
-	Yii::t('app', 'Index'),
+	'Usuários' => array('index'),
+	Yii::t('app', 'Listar'),
 );
 
 $this->menu = array(
-	array('label'=>Yii::t('app', 'Create') . ' ' . User::label(), 'url' => array('create')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . User::label(2), 'url' => array('admin')),
+	array('label'=>Yii::t('app', 'Novo') . '' . '', 'url' => array('create')),
+	array('label'=>Yii::t('app', 'Gerenciar') . '' . '', 'url' => array('admin')),
 );
 ?>
 
-<h1><?php echo GxHtml::encode(User::label(2)); ?></h1>
+<h1><?php echo GxHtml::encode("Lista de Usuários"); ?></h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

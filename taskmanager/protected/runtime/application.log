@@ -3322,3 +3322,358 @@ Stack trace:
 REQUEST_URI=/taskmanager/index.php?r=user/create
 HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/index
 ---
+2018/07/05 08:23:45 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 08:23:45 [warning] [application] Failed to set unsafe attribute "tasks" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (17)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 08:23:45 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '30-04-1995' for column 'birth_date' at row 1. A declaração SQL executada foi: INSERT INTO `user` (`create_date`, `update_date`, `name`, `gender`, `birth_date`, `email`, `fone`, `username`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8).
+in /var/www/html/taskmanager/protected/controllers/UserController.php (19)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 08:23:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '30-04-1995' for column 'birth_date' at row 1. The SQL statement executed was: INSERT INTO `user` (`create_date`, `update_date`, `name`, `gender`, `birth_date`, `email`, `fone`, `username`, `password`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7, :yp8)' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1017): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->insert(NULL)
+#2 /var/www/html/taskmanager/protected/controllers/UserController.php(19): CActiveRecord->save()
+#3 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionCreate()
+#4 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#5 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#6 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('create')
+#8 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/create')
+#9 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/create
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/create
+---
+2018/07/05 08:36:27 [error] [php] Missing argument 2 for YiiBase::t(), called in /var/www/html/taskmanager/protected/views/user/index.php on line 10 and defined (/var/www/html/yii/framework/YiiBase.php:573)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(96): UserController->renderInternal()
+#1 /var/www/html/yii/framework/web/CController.php(870): UserController->renderFile()
+#2 /var/www/html/yii/framework/web/CController.php(783): UserController->renderPartial()
+#3 /var/www/html/taskmanager/protected/controllers/UserController.php(61): UserController->render()
+#4 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionIndex()
+#5 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#6 /var/www/html/yii/framework/web/CController.php(287): UserController->runAction()
+#7 /var/www/html/yii/framework/web/CController.php(266): UserController->runActionWithFilters()
+#8 /var/www/html/yii/framework/web/CWebApplication.php(283): UserController->run()
+#9 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php?r=user
+in /var/www/html/taskmanager/protected/views/user/index.php (10)
+in /var/www/html/taskmanager/protected/controllers/UserController.php (61)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 08:52:44 [error] [exception.CException] exception 'CException' with message 'A propriedade "User.teste" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:131
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(144): CComponent->__get('teste')
+#1 /var/www/html/yii/framework/web/helpers/CHtml.php(2158): CActiveRecord->__get('teste')
+#2 /var/www/html/yii/framework/web/helpers/CHtml.php(1887): CHtml::resolveValue(Object(User), 'teste')
+#3 /var/www/html/yii/framework/web/helpers/CHtml.php(1217): CHtml::activeInputField('text', Object(User), 'teste', Array)
+#4 /var/www/html/yii/framework/zii/widgets/grid/CDataColumn.php(98): CHtml::activeTextField(Object(User), 'teste', Array)
+#5 /var/www/html/yii/framework/zii/widgets/grid/CGridColumn.php(110): CDataColumn->renderFilterCellContent()
+#6 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(477): CGridColumn->renderFilterCell()
+#7 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(455): CGridView->renderFilter()
+#8 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(425): CGridView->renderTableHeader()
+#9 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(161): CGridView->renderItems()
+#10 [internal function]: CBaseListView->renderSection(Array)
+#11 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(144): preg_replace_callback('/{(\\w+)}/', Array, '{summary}\n{item...')
+#12 /var/www/html/yii/framework/zii/widgets/CBaseListView.php(129): CBaseListView->renderContent()
+#13 /var/www/html/yii/framework/web/CBaseController.php(174): CBaseListView->run()
+#14 /var/www/html/taskmanager/protected/views/user/admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#15 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#16 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#17 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#18 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('admin', Array, true)
+#19 /var/www/html/taskmanager/protected/controllers/UserController.php(73): CController->render('admin', Array)
+#20 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): UserController->actionAdmin()
+#21 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#22 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#23 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('admin')
+#25 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/admin')
+#26 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#27 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/admin
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/create
+---
+2018/07/05 08:58:42 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (69)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 08:58:49 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (69)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:17:52 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (35)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:17:52 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '19-97-0510' for column 'birth_date' at row 1. A declaração SQL executada foi: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4.
+in /var/www/html/taskmanager/protected/controllers/UserController.php (37)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:17:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '19-97-0510' for column 'birth_date' at row 1. The SQL statement executed was: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1685): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1064): CActiveRecord->updateByPk('4', Array)
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#3 /var/www/html/taskmanager/protected/controllers/UserController.php(37): CActiveRecord->save()
+#4 [internal function]: UserController->actionUpdate('4')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('update')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/update')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/update&id=4
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/update&id=4
+---
+2018/07/05 09:18:21 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (35)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:18:21 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '19-97-0510' for column 'birth_date' at row 1. A declaração SQL executada foi: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4.
+in /var/www/html/taskmanager/protected/controllers/UserController.php (37)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:18:21 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '19-97-0510' for column 'birth_date' at row 1. The SQL statement executed was: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1685): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1064): CActiveRecord->updateByPk('4', Array)
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#3 /var/www/html/taskmanager/protected/controllers/UserController.php(37): CActiveRecord->save()
+#4 [internal function]: UserController->actionUpdate('4')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('update')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/update')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/update&id=4
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/update&id=4
+---
+2018/07/05 09:21:09 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (35)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:21:09 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10-05-1997' for column 'birth_date' at row 1. A declaração SQL executada foi: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4.
+in /var/www/html/taskmanager/protected/controllers/UserController.php (37)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:21:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10-05-1997' for column 'birth_date' at row 1. The SQL statement executed was: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1685): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1064): CActiveRecord->updateByPk('4', Array)
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#3 /var/www/html/taskmanager/protected/controllers/UserController.php(37): CActiveRecord->save()
+#4 [internal function]: UserController->actionUpdate('4')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('update')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/update')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/update&id=4
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/update&id=4
+---
+2018/07/05 09:21:37 [warning] [application] Failed to set unsafe attribute "ddd" of "User".
+in /var/www/html/taskmanager/protected/controllers/UserController.php (35)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:21:37 [error] [system.db.CDbCommand] Falha ao executar CDbCommand::execute(): SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10-05-1997' for column 'birth_date' at row 1. A declaração SQL executada foi: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4.
+in /var/www/html/taskmanager/protected/controllers/UserController.php (37)
+in /var/www/html/taskmanager/index.php (13)
+2018/07/05 09:21:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand falhou ao executar o comando SQL: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect date value: '10-05-1997' for column 'birth_date' at row 1. The SQL statement executed was: UPDATE `user` SET `iduser`=:yp0, `create_date`=:yp1, `update_date`=:yp2, `name`=:yp3, `gender`=:yp4, `birth_date`=:yp5, `email`=:yp6, `ddd`=:yp7, `fone`=:yp8, `username`=:yp9, `password`=:yp10 WHERE `user`.`iduser`=4' in /var/www/html/yii/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1685): CDbCommand->execute()
+#1 /var/www/html/yii/framework/db/ar/CActiveRecord.php(1064): CActiveRecord->updateByPk('4', Array)
+#2 /var/www/html/yii/framework/db/ar/CActiveRecord.php(796): CActiveRecord->update(NULL)
+#3 /var/www/html/taskmanager/protected/controllers/UserController.php(37): CActiveRecord->save()
+#4 [internal function]: UserController->actionUpdate('4')
+#5 /var/www/html/yii/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#6 /var/www/html/yii/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#7 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#8 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#9 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('update')
+#11 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('user/update')
+#12 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/taskmanager/index.php?r=user/update&id=4
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=user/update&id=4
+---
+2018/07/05 10:25:26 [error] [php] Illegal string offset 'required' (/var/www/html/yii/framework/web/helpers/CHtml.php:1197)
+Stack trace:
+#0 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#1 /var/www/html/yii/framework/web/CBaseController.php(96): TaskController->renderInternal()
+#2 /var/www/html/yii/framework/web/CController.php(870): TaskController->renderFile()
+#3 /var/www/html/taskmanager/protected/views/task/create.php(19): TaskController->renderPartial()
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require()
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): TaskController->renderInternal()
+#6 /var/www/html/yii/framework/web/CController.php(870): TaskController->renderFile()
+#7 /var/www/html/yii/framework/web/CController.php(783): TaskController->renderPartial()
+#8 /var/www/html/taskmanager/protected/controllers/TaskController.php(27): TaskController->render()
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): TaskController->actionCreate()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /var/www/html/yii/framework/web/CController.php(287): TaskController->runAction()
+#12 /var/www/html/yii/framework/web/CController.php(266): TaskController->runActionWithFilters()
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): TaskController->run()
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CWebApplication->run()
+REQUEST_URI=/taskmanager/index.php?r=task/create
+in /var/www/html/taskmanager/protected/views/task/_form.php (22)
+in /var/www/html/taskmanager/protected/views/task/create.php (19)
+in /var/www/html/taskmanager/protected/controllers/TaskController.php (27)
+2018/07/05 10:56:41 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widget
+s.grid.CGridView" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widget\ns.gr...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget\ns.gr...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widget\ns.gr...', Array)
+#3 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widget\ns.gr...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/05 10:58:22 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widget
+s.grid.CGridView" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widget\ns.gr...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget\ns.gr...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widget\ns.gr...', Array)
+#3 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widget\ns.gr...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---
+2018/07/05 10:58:37 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widget
+s.grid.CGridView" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widget\ns.gr...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget\ns.gr...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widget\ns.gr...', Array)
+#3 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widget\ns.gr...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---
+2018/07/05 10:58:59 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widget
+s.grid.CGridView" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widget\ns.gr...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget\ns.gr...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widget\ns.gr...', Array)
+#3 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widget\ns.gr...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/
+---
+2018/07/05 10:59:13 [error] [exception.CException] exception 'CException' with message 'O alias "zii.widget
+s.grid.CGridView" é inválido. Assegure-se de que ele aponta para um arquivo PHP existente.' in /var/www/html/yii/framework/YiiBase.php:318
+Stack trace:
+#0 /var/www/html/yii/framework/web/CWidgetFactory.php(147): YiiBase::import('zii.widget\ns.gr...', true)
+#1 /var/www/html/yii/framework/web/CBaseController.php(147): CWidgetFactory->createWidget(Object(SiteController), 'zii.widget\ns.gr...', Array)
+#2 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widget\ns.gr...', Array)
+#3 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widget\ns.gr...', Array)
+#4 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#5 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#6 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#7 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#8 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#9 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#10 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#12 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#14 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#15 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#16 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=site/login
+---
+2018/07/05 11:09:47 [error] [exception.CException] exception 'CException' with message 'A propriedade "CDataColumn.0" não está definida.' in /var/www/html/yii/framework/base/CComponent.php:174
+Stack trace:
+#0 /var/www/html/yii/framework/YiiBase.php(222): CComponent->__set('0', 'Privado')
+#1 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(336): YiiBase::createComponent(Array, Object(CGridView))
+#2 /var/www/html/yii/framework/zii/widgets/grid/CGridView.php(307): CGridView->initColumns()
+#3 /var/www/html/yii/framework/web/CBaseController.php(148): CGridView->init()
+#4 /var/www/html/yii/framework/web/CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 /var/www/html/taskmanager/protected/views/site/index.php(56): CBaseController->widget('zii.widgets.gri...', Array)
+#6 /var/www/html/yii/framework/web/CBaseController.php(127): require('/var/www/html/t...')
+#7 /var/www/html/yii/framework/web/CBaseController.php(96): CBaseController->renderInternal('/var/www/html/t...', Array, true)
+#8 /var/www/html/yii/framework/web/CController.php(870): CBaseController->renderFile('/var/www/html/t...', Array, true)
+#9 /var/www/html/yii/framework/web/CController.php(783): CController->renderPartial('index', Array, true)
+#10 /var/www/html/taskmanager/protected/controllers/SiteController.php(36): CController->render('index', Array)
+#11 /var/www/html/yii/framework/web/actions/CInlineAction.php(50): SiteController->actionIndex()
+#12 /var/www/html/yii/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#13 /var/www/html/yii/framework/web/CController.php(287): CController->runAction(Object(CInlineAction))
+#14 /var/www/html/yii/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /var/www/html/yii/framework/web/CWebApplication.php(283): CController->run('')
+#16 /var/www/html/yii/framework/web/CWebApplication.php(142): CWebApplication->runController('')
+#17 /var/www/html/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /var/www/html/taskmanager/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/taskmanager/index.php
+HTTP_REFERER=http://localhost/taskmanager/index.php?r=task/admin
+---

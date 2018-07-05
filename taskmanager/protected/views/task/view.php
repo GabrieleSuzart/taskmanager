@@ -6,11 +6,11 @@ $this->breadcrumbs = array(
 );
 
 $this->menu=array(
-	array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-	array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
-	array('label'=>Yii::t('app', 'Update') . ' ' . $model->label(), 'url'=>array('update', 'id' => $model->idtask)),
-	array('label'=>Yii::t('app', 'Delete') . ' ' . $model->label(), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->idtask), 'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>Yii::t('app', 'Manage') . ' ' . $model->label(2), 'url'=>array('admin')),
+	array('label'=>Yii::t('app', 'Listar'), 'url'=>array('index')),
+	array('label'=>Yii::t('app', 'Novo'), 'url'=>array('create')),
+	array('label'=>Yii::t('app', 'Editar'), 'url'=>array('update', 'id' => $model->idtask)),
+	array('label'=>Yii::t('app', 'Excluir'), 'url'=>'#', 'linkOptions' => array('submit' => array('delete', 'id' => $model->idtask), 'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>Yii::t('app', 'Gerenciar'), 'url'=>array('admin')),
 );
 ?>
 

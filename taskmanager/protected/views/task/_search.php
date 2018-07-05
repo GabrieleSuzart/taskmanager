@@ -11,23 +11,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'create_date'); ?>
-		<?php echo $form->textField($model, 'create_date'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'update_date'); ?>
-		<?php echo $form->textField($model, 'update_date'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'title'); ?>
 		<?php echo $form->textField($model, 'title', array('maxlength' => 130)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'iduser_fk'); ?>
-		<?php echo $form->dropDownList($model, 'iduser_fk', GxHtml::listDataEx(User::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
+		<?php echo $form->label($model, 'Responsável'); ?>
+		<?php echo $form->dropDownList($model, 'iduser_fk', GxHtml::listDataEx(User::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'Todos'))); ?>
 	</div>
 
 	<div class="row">
@@ -42,7 +32,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model, 'idtasktype_fk'); ?>
-		<?php echo $form->dropDownList($model, 'idtasktype_fk', GxHtml::listDataEx(Tasktype::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'All'))); ?>
+		<?php echo $form->dropDownList($model, 'idtasktype_fk', GxHtml::listDataEx(Tasktype::model()->findAllAttributes(null, true)), array('prompt' => Yii::t('app', 'Todos'))); ?>
 	</div>
 
 	<div class="row">
@@ -66,7 +56,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
+		<?php echo GxHtml::submitButton(Yii::t('app', 'Pesquisar')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

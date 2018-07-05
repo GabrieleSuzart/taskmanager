@@ -11,22 +11,12 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model, 'create_date'); ?>
-		<?php echo $form->textField($model, 'create_date'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model, 'update_date'); ?>
-		<?php echo $form->textField($model, 'update_date'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model, 'name'); ?>
 		<?php echo $form->textField($model, 'name', array('maxlength' => 130)); ?>
 	</div>
 
 	<div class="row buttons">
-		<?php echo GxHtml::submitButton(Yii::t('app', 'Search')); ?>
+		<?php echo GxHtml::submitButton(Yii::t('app', 'Pesquisar')); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

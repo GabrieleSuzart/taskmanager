@@ -16,6 +16,7 @@
  * @property string $gender
  * @property string $birth_date
  * @property string $email
+ * @property string $ddd
  * @property string $fone
  * @property string $username
  * @property string $password
@@ -33,7 +34,7 @@ abstract class BaseUser extends GxActiveRecord {
 	}
 
 	public static function label($n = 1) {
-		return Yii::t('app', 'User|Users', $n);
+		return Yii::t('app', 'Usuário|Usuários', $n);
 	}
 
 	public static function representingColumn() {
@@ -42,14 +43,15 @@ abstract class BaseUser extends GxActiveRecord {
 
 	public function rules() {
 		return array(
-			array('name, gender, birth_date, email, fone, username, password', 'required'),
+			array('name, gender, birth_date, email, ddd, fone, username, password', 'required'),
 			array('name, email', 'length', 'max'=>130),
 			array('gender', 'length', 'max'=>1),
+			array('ddd', 'length', 'max'=>4),
 			array('fone', 'length', 'max'=>11),
 			array('username, password', 'length', 'max'=>45),
 			array('create_date, update_date', 'safe'),
 			array('create_date, update_date', 'default', 'setOnEmpty' => true, 'value' => null),
-			array('iduser, create_date, update_date, name, gender, birth_date, email, fone, username, password', 'safe', 'on'=>'search'),
+			array('iduser, create_date, update_date, name, gender, birth_date, email, ddd, fone, username, password', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,16 +68,17 @@ abstract class BaseUser extends GxActiveRecord {
 
 	public function attributeLabels() {
 		return array(
-			'iduser' => Yii::t('app', 'Iduser'),
-			'create_date' => Yii::t('app', 'Create Date'),
-			'update_date' => Yii::t('app', 'Update Date'),
-			'name' => Yii::t('app', 'Name'),
-			'gender' => Yii::t('app', 'Gender'),
-			'birth_date' => Yii::t('app', 'Birth Date'),
+			'iduser' => Yii::t('app', 'Código'),
+			'create_date' => Yii::t('app', 'Data do cadastro'),
+			'update_date' => Yii::t('app', 'Data da última edição'),
+			'name' => Yii::t('app', 'Nome'),
+			'gender' => Yii::t('app', 'Gênero'),
+			'birth_date' => Yii::t('app', 'Data de nascimento'),
 			'email' => Yii::t('app', 'Email'),
-			'fone' => Yii::t('app', 'Fone'),
-			'username' => Yii::t('app', 'Username'),
-			'password' => Yii::t('app', 'Password'),
+			'ddd' => Yii::t('app', 'Ddd'),
+			'fone' => Yii::t('app', 'Telefone'),
+			'username' => Yii::t('app', 'Login'),
+			'password' => Yii::t('app', 'Senha'),
 			'tasks' => null,
 		);
 	}
@@ -90,6 +93,7 @@ abstract class BaseUser extends GxActiveRecord {
 		$criteria->compare('gender', $this->gender, true);
 		$criteria->compare('birth_date', $this->birth_date, true);
 		$criteria->compare('email', $this->email, true);
+		$criteria->compare('ddd', $this->ddd, true);
 		$criteria->compare('fone', $this->fone, true);
 		$criteria->compare('username', $this->username, true);
 		$criteria->compare('password', $this->password, true);

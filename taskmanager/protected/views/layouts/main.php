@@ -61,8 +61,8 @@
     $(document).ready(function () { 
         var $date = $(".hasDatepicker");
         $date.mask('00-00-0000', {reverse: true});
-		// var $user_fone = $("#User_fone");
-		// $user_fone.mask('(00)00000-0000', {reverse: true});
+		var $user_fone = $("#User_fone");
+		$user_fone.mask('00000-0000', {reverse: true});
     });
 </script>
 </body>

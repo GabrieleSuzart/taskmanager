@@ -1,13 +1,13 @@
 <?php
 
 $this->breadcrumbs = array(
-	$model->label(2) => array('index'),
-	Yii::t('app', 'Manage'),
+	'Usuários' => array('index'),
+	Yii::t('app', 'Gerenciar'),
 );
 
 $this->menu = array(
-		array('label'=>Yii::t('app', 'List') . ' ' . $model->label(2), 'url'=>array('index')),
-		array('label'=>Yii::t('app', 'Create') . ' ' . $model->label(), 'url'=>array('create')),
+		array('label'=>Yii::t('app', 'Listar') . ' ' . '', 'url'=>array('index')),
+		array('label'=>Yii::t('app', 'Novo') . ' ' . '', 'url'=>array('create')),
 	);
 
 Yii::app()->clientScript->registerScript('search', "
@@ -24,13 +24,13 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1><?php echo Yii::t('app', 'Manage') . ' ' . GxHtml::encode($model->label(2)); ?></h1>
+<h1><?php echo Yii::t('app', 'Gerenciar Usuários'); ?></h1>
 
 <!-- <p>
 You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&gt; or =) at the beginning of each of your search values to specify how the comparison should be done.
 </p> -->
 
-<?php echo GxHtml::link(Yii::t('app', 'Advanced Search'), '#', array('class' => 'search-button')); ?>
+<?php echo GxHtml::link(Yii::t('app', 'Pesquisa avançada'), '#', array('class' => 'search-button')); ?>
 <div class="search-form">
 <?php $this->renderPartial('_search', array(
 	'model' => $model,
@@ -43,13 +43,14 @@ You may optionally enter a comparison operator (&lt;, &lt;=, &gt;, &gt;=, &lt;&g
 	'filter' => $model,
 	'columns' => array(
 		'iduser',
-		'create_date',
-		'update_date',
+		// 'create_date',
+		// 'update_date',
 		'name',
 		'gender',
 		'birth_date',
 		/*
 		'email',
+		'ddd',
 		'fone',
 		'username',
 		'password',

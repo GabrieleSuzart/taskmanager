@@ -28,10 +28,6 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<?php 
-	echo(Yii::app()->user->id);
-?>
-
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 
 	'id' => 'task-grid',
@@ -39,6 +35,7 @@ $('.search-form form').submit(function(){
 	'filter' => $model,
 		'columns' => array(
 			'title',
+			'status',
 			array(
 				'name'=>'iduser_fk',
 				'value'=>'GxHtml::valueEx($data->iduserFk)',

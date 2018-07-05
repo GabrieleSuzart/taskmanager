@@ -34,7 +34,7 @@ abstract class BaseTask extends GxActiveRecord {
 	}
 
 	public static function label($n = 1) {
-		return Yii::t('app', 'Task|Tasks', $n);
+		return Yii::t('app', 'Tarefa|Tarefas', $n);
 	}
 
 	public static function representingColumn() {
@@ -67,16 +67,16 @@ abstract class BaseTask extends GxActiveRecord {
 
 	public function attributeLabels() {
 		return array(
-			'idtask' => Yii::t('app', 'Idtask'),
-			'create_date' => Yii::t('app', 'Create Date'),
-			'update_date' => Yii::t('app', 'Update Date'),
-			'title' => Yii::t('app', 'Title'),
+			'idtask' => Yii::t('app', 'Código'),
+			'create_date' => Yii::t('app', 'Data do cadastro'),
+			'update_date' => Yii::t('app', 'Data da última edição'),
+			'title' => Yii::t('app', 'Título'),
 			'iduser_fk' => null,
-			'privacy' => Yii::t('app', 'Privacy'),
-			'description' => Yii::t('app', 'Description'),
+			'privacy' => Yii::t('app', 'Privacidade'),
+			'description' => Yii::t('app', 'Descrição'),
 			'idtasktype_fk' => null,
 			'status' => Yii::t('app', 'Status'),
-			'conclusion_date' => Yii::t('app', 'Conclusion Date'),
+			'conclusion_date' => Yii::t('app', 'Data de conclusão'),
 			'idtasktypeFk' => null,
 			'iduserFk' => null,
 		);
@@ -89,7 +89,7 @@ abstract class BaseTask extends GxActiveRecord {
 		$criteria->compare('create_date', $this->create_date, true);
 		$criteria->compare('update_date', $this->update_date, true);
 		$criteria->compare('title', $this->title, true);
-		$criteria->compare('iduser_fk', $this->iduser_fk);
+		$criteria->compare('iduser_fk', Yii::app()->user->id);
 		$criteria->compare('privacy', $this->privacy, true);
 		$criteria->compare('description', $this->description, true);
 		$criteria->compare('idtasktype_fk', $this->idtasktype_fk);

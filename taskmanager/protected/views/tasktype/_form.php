@@ -8,19 +8,19 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
+		<?php echo Yii::t('app', 'Campos com'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'são obrigatórios'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
 
 		<div class="row">
-		<?php echo $form->labelEx($model,'nome'); ?>
+		<?php echo $form->labelEx($model,'name'); ?>
 		<?php echo $form->textField($model, 'name', array('maxlength' => 130)); ?>
 		<?php echo $form->error($model,'name'); ?>
 		</div><!-- row -->
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Salvar'));
 $this->endWidget();
 ?>
 </div><!-- form -->

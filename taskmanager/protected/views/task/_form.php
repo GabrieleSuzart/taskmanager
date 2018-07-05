@@ -8,7 +8,7 @@
 ?>
 
 	<p class="note">
-		<?php echo Yii::t('app', 'Fields with'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'are required'); ?>.
+		<?php echo Yii::t('app', 'Campos com'); ?> <span class="required">*</span> <?php echo Yii::t('app', 'são obrigatórios'); ?>.
 	</p>
 
 	<?php echo $form->errorSummary($model); ?>
@@ -19,14 +19,25 @@
 		<?php echo $form->error($model,'title'); ?>
 		</div><!-- row -->
 		<div class="row">
-		<?php echo $form->labelEx($model,'iduser_fk'); ?>
-		<?php echo $form->dropDownList($model, 'iduser_fk', GxHtml::listDataEx(User::model()->findAllAttributes(null, true))); ?>
+		<?php echo $form->labelEx($model,'Responsável'.'<span class="required"> *</span>'); ?>
+		<?php echo $form->dropDownList($model, 'iduser_fk',
+			array(
+				'prompt'=>'Selecione uma opção',
+				GxHtml::listDataEx(User::model()->findAllAttributes(null, true))
+			) 
+		)?>
 		<?php echo $form->error($model,'iduser_fk'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'privacy'); ?>
-		<?php echo $form->textField($model, 'privacy', array('maxlength' => 1)); ?>
-		<?php echo $form->error($model,'privacy'); ?>
+		<?php echo $form->dropdownlist($model, 'status', 
+			array(
+				'prompt'=>'Selecione uma opção',
+				0 => 'Privado',
+				1 => 'Público'
+			)
+		); 
+		?>		<?php echo $form->error($model,'privacy'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
@@ -35,12 +46,25 @@
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'idtasktype_fk'); ?>
-		<?php echo $form->dropDownList($model, 'idtasktype_fk', GxHtml::listDataEx(Tasktype::model()->findAllAttributes(null, true))); ?>
+		<?php echo $form->dropDownList($model, 'idtasktype_fk', 
+		array(
+			'prompt'=>'Selecione uma opção',
+			GxHtml::listDataEx(Tasktype::model()->findAllAttributes(null, true))
+		)
+		);?>
 		<?php echo $form->error($model,'idtasktype_fk'); ?>
 		</div><!-- row -->
 		<div class="row">
 		<?php echo $form->labelEx($model,'status'); ?>
-		<?php echo $form->textField($model, 'status', array('maxlength' => 1)); ?>
+		<?php echo $form->dropdownlist($model, 'status', 
+			array(
+				'prompt'=>'Selecione uma opção',
+				0 => 'Aberta',
+				1 => 'Em andamento',
+				2 => 'Concluída'
+			)
+		); 
+		?>
 		<?php echo $form->error($model,'status'); ?>
 		</div><!-- row -->
 		<div class="row">
@@ -61,7 +85,7 @@
 
 
 <?php
-echo GxHtml::submitButton(Yii::t('app', 'Save'));
+echo GxHtml::submitButton(Yii::t('app', 'Salvar'));
 $this->endWidget();
 ?>
 </div><!-- form -->
